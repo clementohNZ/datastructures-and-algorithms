@@ -80,8 +80,11 @@ function hashFunc(key: string, arraySize: number): number {
   return hash % arraySize;
 }
 
-// You will want a more robust hasing algorithm that this
+// You will want a more robust hasing algorithm than this
 // because the code below will cause a lot of collisions.
+// For example, your hash algorithm could take the string
+// key, calculate the binary representation, which will be
+// modded by the array size to find the index.
 function hash(key: string): number {
   return key.length;
 }
