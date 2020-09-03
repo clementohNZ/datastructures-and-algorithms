@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Definitions](#definitions)
-- [Time Complexity](#time-complexity)
+- [Time and Space Complexity](#time-and-space-complexity)
 - [How it works](#how-it-works)
   * [Component 1: Hashing function](#component-1--hashing-function)
     + [Definitions](#definitions-1)
@@ -18,6 +18,7 @@
   * [Downfalls](#downfalls)
   * [Mitigations for Downfalls](#mitigations-for-downfalls)
 - [Other Notes](#other-notes)
+- [Sources](#sources)
 
 ## Definitions
 1. A hash table, also known as a hash map, is a data structure
