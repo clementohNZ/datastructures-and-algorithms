@@ -33,12 +33,7 @@ on it. The result (commonly called the hash value or hash) is the
 index of the key-value pair in the hash table -
 [Edpresso](https://www.educative.io/edpresso/what-is-a-hash-table)
 
-3. Hash tables are used to implement map and set data structures in
-most common programming languages. In C++ and Java they are part of
-the standard libraries, while Python and Go have builtin dictionaries
-and maps.
-
-4. A hash table is an **unordered** collection of **key-value pairs**, where
+3. A hash table is an **unordered** collection of **key-value pairs**, where
 each key is unique -
 [yourbasic.org](https://yourbasic.org/algorithms/hash-tables-explained/)
 
