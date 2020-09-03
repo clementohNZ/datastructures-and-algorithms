@@ -31,7 +31,7 @@ found or stored in the hash table -
 The key is sent to a hash function that performs arithmetic operations
 on it. The result (commonly called the hash value or hash) is the
 index of the key-value pair in the hash table -
-[Edpresso](https://www.educative.io/edpresso/what-is-a-hash-table)
+[edpresso](https://www.educative.io/edpresso/what-is-a-hash-table)
 
 3. A hash table is an **unordered** collection of **key-value pairs**, where
 each key is unique -
@@ -57,7 +57,7 @@ arbitrary size to fixed-size values. The values returned by a hash
 function are called hash values, hash codes, digests, or simply
 hashes. The values are used to index a fixed-size table called a
 hash table. Use of a hash function to index a hash table is called
-hashing or scatter storage addressing.
+hashing or scatter storage addressing -
 [Wikipedia](https://en.wikipedia.org/wiki/Hash_function)
 
 Choosing an efficient hash function is a crucial
@@ -92,7 +92,7 @@ modulo `(%)` operator.
 
 ### Component 2: Array
 The array holds all the key-value entries in the table. In most hash
-tables, the array is usually an array of linked-lists.
+tables, the array is usually an array of linked lists.
 
 The size of the array should be set according to the amount of data expected.
 In most dynamic languages such as Python and JS, the array is
@@ -191,7 +191,7 @@ scenario is `O(n)` linear time.
 - You mush account for potential collisions.
 - Hashing can also be inefficient when there are too many collisions.
   - As the number of collisions increase, (for chaining solution) the
-  larger the linked-list will get and begin to represent a more
+  larger the linked list will get and begin to represent a more
   linear `O(n)` time complexity.
 
 ### Mitigations for Downfalls
