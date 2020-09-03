@@ -1,24 +1,22 @@
 # Hash Tables
 
 ## Table of Contents
-- [Hash Tables](#hash-tables)
-  * [Table of Contents](#table-of-contents)
-  * [Definitions](#definitions)
-  * [Time Complexity](#time-complexity)
-  * [How it works](#how-it-works)
-    + [Component 1: Hashing function](#component-1--hashing-function)
-      - [Definitions](#definitions-1)
-      - [Example](#example)
-    + [Component 2: Array](#component-2--array)
-    + [Collisions in hash tables & resolutions](#collisions-in-hash-tables---resolutions)
-      - [Collision Resolution: Linear Probing](#collision-resolution--linear-probing)
-      - [Collision Resolution: Chaining](#collision-resolution--chaining)
-      - [Collision Resolution: Resizing the hash table](#collision-resolution--resizing-the-hash-table)
-    + [Examples](#examples)
-  * [Pros and Cons](#pros-and-cons)
-    + [Benefits](#benefits)
-    + [Downfalls](#downfalls)
-    + [Mitigations for Downfalls](#mitigations-for-downfalls)
+- [Definitions](#definitions)
+- [Time Complexity](#time-complexity)
+- [How it works](#how-it-works)
+  * [Component 1: Hashing function](#component-1--hashing-function)
+    + [Definitions](#definitions-1)
+    + [Example](#example)
+  * [Component 2: Array](#component-2--array)
+  * [Collisions in hash tables & resolutions](#collisions-in-hash-tables---resolutions)
+    + [Collision Resolution: Linear Probing](#collision-resolution--linear-probing)
+    + [Collision Resolution: Chaining](#collision-resolution--chaining)
+    + [Collision Resolution: Resizing the hash table](#collision-resolution--resizing-the-hash-table)
+  * [Examples](#examples)
+- [Pros and Cons](#pros-and-cons)
+  * [Benefits](#benefits)
+  * [Downfalls](#downfalls)
+  * [Mitigations for Downfalls](#mitigations-for-downfalls)
 - [Other Notes](#other-notes)
 
 ## Definitions
@@ -204,5 +202,5 @@ by re-hashing or “re-sizing” the hash table. Re-hashing can be done
 gradually or all at once, but either way the time complexity for this
 action will be `O(n)`.
 
-# Other Notes
+## Other Notes
 - Hash table arrays are sometimes referred to as "buckets".
