@@ -42,13 +42,13 @@ and maps.
 each key is unique -
 [yourbasic.org](https://yourbasic.org/algorithms/hash-tables-explained/)
 
-## Time Complexity
+## Time and Space Complexity
 | Algorithm     | Average       | Worst Case    |
 | ------------- | ------------- | ------------- |
 | Space         | `O(n)`        | `O(n)`        |
-| Search        | `O(log n)`    | `O(n)`        |
-| Insert        | `O(log n)`    | `O(n)`        |
-| Delete        | `O(log n)`    | `O(n)`        |
+| Search        | `O(1)`        | `O(n)`        |
+| Insert        | `O(1)`        | `O(n)`        |
+| Delete        | `O(1)`        | `O(n)`        |
 
 ## How it works
 ### Component 1: Hashing function
