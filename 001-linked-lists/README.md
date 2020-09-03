@@ -8,7 +8,6 @@
 - [How it works](#how-it-works)
   * [Singly Linked List (Uni-directional)](#singly-linked-list--uni-directional-)
   * [Doubly Linked List (Bi-directional)](#doubly-linked-list--bi-directional-)
-  * [Circular Linked List](#circular-linked-list)
 - [Pros and Cons](#pros-and-cons)
   * [Compared to Arrays](#compared-to-arrays)
     + [Benefits](#benefits)
@@ -76,11 +75,10 @@ points to NULL which helps us in determining when the list ends.
 ![Singly-Linked List](./resources/singly-linked-list.png)
 
 ### Doubly Linked List (Bi-directional)
-### Circular Linked List
 A Doubly Linked List (DLL) contains an extra pointer, typically called previous pointer,
 together with next pointer and data which are there in singly linked list.
 
-![Singly-Linked List](./resources/doubly-linked-list.png)
+![Doubly-Linked List](./resources/doubly-linked-list.png)
 
 ## Pros and Cons
 
