@@ -1,5 +1,26 @@
 # Hash Tables
 
+## Table of Contents
+- [Hash Tables](#hash-tables)
+  * [Table of Contents](#table-of-contents)
+  * [Definitions](#definitions)
+  * [Time Complexity](#time-complexity)
+  * [How it works](#how-it-works)
+    + [Component 1: Hashing function](#component-1--hashing-function)
+      - [Definitions](#definitions-1)
+      - [Example](#example)
+    + [Component 2: Array](#component-2--array)
+    + [Collisions in hash tables & resolutions](#collisions-in-hash-tables---resolutions)
+      - [Collision Resolution: Linear Probing](#collision-resolution--linear-probing)
+      - [Collision Resolution: Chaining](#collision-resolution--chaining)
+      - [Collision Resolution: Resizing the hash table](#collision-resolution--resizing-the-hash-table)
+    + [Examples](#examples)
+  * [Pros and Cons](#pros-and-cons)
+    + [Benefits](#benefits)
+    + [Downfalls](#downfalls)
+    + [Mitigations for Downfalls](#mitigations-for-downfalls)
+- [Other Notes](#other-notes)
+
 ## Definitions
 1. A hash table, also known as a hash map, is a data structure
 that **maps keys to values**. It is one part of a technique called
@@ -84,20 +105,48 @@ behavior is in your language.
 
 ![Hasing Process](./resources/hashing-process.svg)
 
+### Collisions in hash tables & resolutions
+A collision occurs when two keys get mapped to the same index. There
+are several ways of handling collisions.
+
+#### Collision Resolution: Linear Probing
+If a pair is hashed to a slot which is already occupied, it searches
+linearly for the next free slot in the table.
+
+#### Collision Resolution: Chaining
+The hash table will be an array of linked lists. All keys mapping to
+the same index will be stored as linked list nodes at that index.
+
+![Collision Resolution: Chaining](./resources/conflict-resolution-chaining.svg)
+
+#### Collision Resolution: Resizing the hash table
+The size of the hash table can be increased in order to spread the
+hash entries further apart. A threshold value signifies the percentage
+of the hash table that needs to be occupied before resizing. A hash
+table with a threshold of 0.6 would resize when 60% of the space is
+occupied. As a convention, the size of the hashtable is doubled. This
+can be memory intensive.
+
+![Collision Resolution: Resizing](./resources/conflict-resolution-resizing.svg)
+
 ### Examples
 
+The example below is implemented in TypeScript and using 2D arrays. Key-value pairs are also
+represented as simple arrays where `[key=Country, value=Capital City]` for simplicty. But you
+could always convert the countries, capitals, and key-value pairs into their own classes to
+provide more functionality.
+
 ```typescript
-// [key, value]
-// [Country, Capital City]
 [
   // Hashing algo produced index 0
   ["New Zealand", "Auckland"],
   // Hashing algo produced index 1 and created collisions.
-  ["United States", "Washington DC"], ["France", "Paris"],
+  [["United States", "Washington DC"], ["France", "Paris"]],
   // Hashing algo produced index 2
   ["England", "London"],
 ]
 ```
+
 **Step-by-Step: No Collision**
 1. Try to access the key `"New Zealand"` by using `countries["New Zealand"]`;
 2. The hashing algorithm takes the key `"New Zealand"` and using the hashing function, it
@@ -129,30 +178,6 @@ than one key-value pair;
 From the collision access example above, you can see how you need to iterate over collision
 values (at index 1) to find the appropriate key. This is why as the amount of colissions
 increases, the Hash Table begins to resemble a time complexity of `O(n)`.
-
-### Collisions in hash tables & resolutions
-A collision occurs when two keys get mapped to the same index. There
-are several ways of handling collisions.
-
-#### Collision Resolution: Linear Probing
-If a pair is hashed to a slot which is already occupied, it searches
-linearly for the next free slot in the table.
-
-#### Collision Resolution: Chaining
-The hash table will be an array of linked lists. All keys mapping to
-the same index will be stored as linked list nodes at that index.
-
-![Collision Resolution: Chaining](./resources/conflict-resolution-chaining.svg)
-
-#### Collision Resolution: Resizing the hash table
-The size of the hash table can be increased in order to spread the
-hash entries further apart. A threshold value signifies the percentage
-of the hash table that needs to be occupied before resizing. A hash
-table with a threshold of 0.6 would resize when 60% of the space is
-occupied. As a convention, the size of the hashtable is doubled. This
-can be memory intensive.
-
-![Collision Resolution: Resizing](./resources/conflict-resolution-resizing.svg)
 
 ## Pros and Cons
 
