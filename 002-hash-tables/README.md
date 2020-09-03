@@ -24,18 +24,15 @@
 that **maps keys to values**. It is one part of a technique called
 hashing, the other of which is a hash function. A hash function
 is an algorithm that produces an index of where a value can be
-found or stored in the hash table -
-[Free Code Camp](https://www.freecodecamp.org/news/hash-tables/)
+found or stored in the hash table - [Free Code Camp][1].
 
 2. A hash table is a type of data structure that stores **key-value pairs**.
 The key is sent to a hash function that performs arithmetic operations
 on it. The result (commonly called the hash value or hash) is the
-index of the key-value pair in the hash table -
-[edpresso](https://www.educative.io/edpresso/what-is-a-hash-table)
+index of the key-value pair in the hash table - [Edpresso][2].
 
 3. A hash table is an **unordered** collection of **key-value pairs**, where
-each key is unique -
-[yourbasic.org](https://yourbasic.org/algorithms/hash-tables-explained/)
+each key is unique - [yourbasic.org][3].
 
 ## Time and Space Complexity
 | Algorithm     | Average       | Worst Case    |
@@ -49,16 +46,14 @@ each key is unique -
 ### Component 1: Hashing function
 #### Definitions
 1. As we’ve already seen, the hash function determines the index of
-our key-value pair -
-[Edpresso](https://www.educative.io/edpresso/what-is-a-hash-table)
+our key-value pair - [Edpresso][2].
 
 2. A hash function is any function that can be used to map data of
 arbitrary size to fixed-size values. The values returned by a hash
 function are called hash values, hash codes, digests, or simply
 hashes. The values are used to index a fixed-size table called a
 hash table. Use of a hash function to index a hash table is called
-hashing or scatter storage addressing -
-[Wikipedia](https://en.wikipedia.org/wiki/Hash_function)
+hashing or scatter storage addressing - [Wikipedia][4].
 
 Choosing an efficient hash function is a crucial
 part of creating a good hash table. You should always ensure that it’s
@@ -202,3 +197,14 @@ action will be `O(n)`.
 
 ## Other Notes
 - Hash table arrays are sometimes referred to as "buckets".
+
+## Sources
+- [Free Code Camp | Hash Tables][1]
+- [Edpresso | What is a hash table][2]
+- [yourbasic.org | Hash Tables Explained][3]
+- [Wikipedia | Hash Function][4]
+
+[1]: https://www.freecodecamp.org/news/hash-tables/
+[2]: https://www.educative.io/edpresso/what-is-a-hash-table
+[3]: https://yourbasic.org/algorithms/hash-tables-explained/
+[4]: https://en.wikipedia.org/wiki/Hash_function

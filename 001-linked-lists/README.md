@@ -1,19 +1,33 @@
 # Linked List
 
 ## Table of Contents
+- [Definitions](#definitions)
+- [Time and Space Complexity](#time-and-space-complexity)
+  * [Singly-Linked List](#singly-linked-list)
+  * [Doubly-Linked List](#doubly-linked-list)
+- [How it works](#how-it-works)
+  * [Singly Linked List (Uni-directional)](#singly-linked-list--uni-directional-)
+  * [Doubly Linked List (Bi-directional)](#doubly-linked-list--bi-directional-)
+  * [Circular Linked List](#circular-linked-list)
+- [Pros and Cons](#pros-and-cons)
+  * [Compared to Arrays](#compared-to-arrays)
+    + [Benefits](#benefits)
+    + [Downfalls](#downfalls)
+  * [Doubly-Linked List (Uni-directional) compared to Singly-Linked List](#doubly-linked-list--uni-directional--compared-to-singly-linked-list)
+    + [Benefits](#benefits-1)
+    + [Downfalls](#downfalls-1)
+- [Sources](#sources)
 
 ## Definitions
 1. A linked list is a linear data structure, in which the elements are not stored at
 contiguous memory locations (next to each other). The elements in a linked list are
-linked using pointers as shown in the below image -
-[GeeksforGeeks](https://www.geeksforgeeks.org/data-structures/linked-list/)
+linked using pointers as shown in the below image - [GeeksforGeeks][5].
 
 2. In computer science, a linked list is a linear collection of data elements whose order
 is not given by their physical placement in memory. Instead, each element points to the
 next. It is a data structure consisting of a collection of nodes which together represent
 a sequence. In its most basic form, each node contains: data, and a reference (in other
-words, a link) to the next node in the sequence -
-[Wikipedia](https://en.wikipedia.org/wiki/Linked_list)
+words, a link) to the next node in the sequence - [Wikipedia][4].
 
 3. A linked list is a common data structure made of a chain of nodes in which each node
 contains a value and a pointer to the next node in the chain. The head pointer points to
@@ -22,8 +36,7 @@ the head pointer points to null. Linked lists can dynamically increase in size a
 easy to insert and delete from a linked list because unlike arrays, we only need to
 change the pointers of the previous element and the next element to insert or delete an
 element. Linked lists are typically used to create file systems, adjacency lists, ​and
-hash tables -
-[edpresso](https://www.educative.io/edpresso/what-is-a-linked-list)
+hash tables - [Edpresso][6].
 
 ## Time and Space Complexity
 
@@ -105,3 +118,16 @@ DLL with single pointer though (See [this](https://www.geeksforgeeks.org/xor-lin
 insertion, we need to modify previous pointers together with next pointers. For example
 in following functions for insertions at different positions, we need 1 or 2 extra steps
 to set previous pointer.
+
+## Sources
+- [GeeksforGeeks | Singly Linked List][1]
+- [GeeksforGeeks | Doubly Linked List][2]
+- [Edpresso | Singly Linked List][3]
+- [Wikipedia | Linked List][4]
+
+[1]: https://www.geeksforgeeks.org/linked-list-set-1-introduction/
+[2]: https://www.geeksforgeeks.org/doubly-linked-list
+[3]: https://www.educative.io/edpresso/what-is-a-singly-linked-list
+[4]: https://en.wikipedia.org/wiki/Linked_list
+[5]: https://www.geeksforgeeks.org/data-structures/linked-list
+[6]: https://www.educative.io/edpresso/what-is-a-linked-list
