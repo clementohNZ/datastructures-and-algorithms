@@ -1,6 +1,19 @@
 # Trees
 
 ## Table of Contents
+- [Definitions](#definitions)
+- [Parts of a Tree](#parts-of-a-tree)
+  * [General properties of a tree](#general-properties-of-a-tree)
+    + [Depth](#depth)
+    + [Height](#height)
+    + [Balanced vs. Unbalanced Trees](#balanced-vs-unbalanced-trees)
+- [Example of tree algorithms](#example-of-tree-algorithms)
+  * [Real-World Examples of Trees](#real-world-examples-of-trees)
+    + [Class Hierarchy in Object Orientated Programming](#class-hierarchy-in-object-orientated-programming)
+    + [File Structure in Operating Systems](#file-structure-in-operating-systems)
+- [Pros and Cons](#pros-and-cons)
+    + [Benefits](#benefits)
+- [Sources](#sources)
 
 ## Definitions
 1. Unlike Array and Linked List, which are linear data structures, tree is hierarchical (or non-linear) data structure - [GeeksforGeeks][1].
