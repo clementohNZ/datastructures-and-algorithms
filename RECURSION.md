@@ -178,10 +178,10 @@ And thanks to recursion, you can finally find the key and get your shirt!
 ## Pros and Cons
 
 ### Benefits
-- Easy to read "once you get it". Understanding stacks, recursive, and base cases is
+- Less code
+  - Easy to read "once you get it". Understanding stacks, recursive, and base cases is
 makes it much easier.
-- Makes tree traversal look more elegant.
-- Less code.
+  - Makes tree traversal look more elegant.
 
 ### Downfalls
 - Can be initially quite hard to follow.
