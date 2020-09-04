@@ -133,7 +133,7 @@ function, that function goes on top of the call stack. This similar to a stack o
 books. You add things one at a time. Then, when you are ready to take something
 off, you always take off the top item.
 
-The stack datastructure is an array that specifically follows the rule of
+The stack data structure is an array that specifically follows the rule of
 First-In-Last-Out (FIFO).
 
 I will show you the call stack in action with the factorial function. `factorial(5)`
@@ -184,7 +184,7 @@ makes it much easier.
   - Makes tree traversal look more elegant.
 
 ### Downfalls
-- Can be initially quite hard to follow.
+- Can be quite hard to follow initially.
 - Can be slower than the iterative approach.
 - Stack space is limited. The iterative approach uses heap memory, which is almost
 unlimited depending on application setup.
