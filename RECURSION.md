@@ -1,5 +1,16 @@
 # Understanding Recursion
 
+## Table of Contents
+- [Recursion and Iterative Approaches](#recursion-and-iterative-approaches)
+- [Base case and recursive case (Most important part to understand)](#base-case-and-recursive-case--most-important-part-to-understand-)
+- [The Call Stack](#the-call-stack)
+- [Did you find the key yet?](#did-you-find-the-key-yet-)
+- [Pros and Cons](#pros-and-cons)
+  * [Benefits](#benefits)
+  * [Downfalls](#downfalls)
+- [Sources](#sources)
+
+## Recursion and Iterative Approaches
 Recursion can be tough to understand - especially for new programmers. In its
 simplest form, a recursive function is one that calls itself. Let me try to
 explain with an example.
@@ -163,6 +174,20 @@ is a **stack of half-completed function calls**, each with its own half-complete
 boxes to look through. The stack keeps track of the pile of boxes for you!
 
 And thanks to recursion, you can finally find the key and get your shirt!
+
+## Pros and Cons
+
+### Benefits
+- Easy to read "once you get it". Understanding stacks, recursive, and base cases is
+makes it much easier.
+- Makes tree traversal look more elegant.
+- Less code.
+
+### Downfalls
+- Can be initially quite hard to follow.
+- Can be slower than the iterative approach.
+- Stack space is limited. The iterative approach uses heap memory, which is almost
+unlimited depending on application setup.
 
 ## Sources
 - [How Recursion Works — Explained with Flowcharts and a Video](https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/)
