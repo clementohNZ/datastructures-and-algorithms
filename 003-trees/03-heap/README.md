@@ -5,6 +5,8 @@
   * [Complete Binary Tree](#complete-binary-tree)
   * [Heap Property](#heap-property)
 - [Representation](#representation)
+- [Time Complexity](#time-complexity)
+  * [Binary Heap](#binary-heap)
 - [How it works](#how-it-works)
   * [Implementation](#implementation)
   * [Insertion](#insertion)
@@ -19,6 +21,7 @@
     + [Benefits](#benefits)
     + [Downfalls](#downfalls)
 - [Sources](#sources)
+
 
 ## Definitions
 1. Heap data structure is a complete binary tree that satisfies the **heap property**. It
@@ -62,6 +65,25 @@ class Node {
 ```
 
 ![Binary Tree Representation](./resources/binary-tree-representation.png)
+
+## Time Complexity
+It is always `O(1)` when retrieving the min or max number because (depending on
+the heap type) it is at the top. Searching and inserting nodes still has a
+time complexity of `O(log n)`.
+
+There are a lot of different variations for heap structures. For a full list of
+time complexities based on heap type, checkout this [link][5]
+
+### Binary Heap
+For the most straight-forward heap structure, the binary heap:
+
+| Algorithm             | Average     |
+| ---------             | -------     |
+| Find min/max          | `O(1)`      |
+| Delete min/max        | `O(log n)`  |
+| Insert                | `O(log n)`  |
+| Decrease/increase key | `O(log n)`  |
+| Meld                  | `O(n)`      |
 
 ## How it works
 
@@ -194,9 +216,11 @@ down-heapifying or up-heapifying to restore the heap property.
 - [GeeksforGeeks | Heap Data Structure][1]
 - [Programiz | Heap Data Structure][2]
 - [Wikipedia | Binary Heap][3]
-- [Gruu99 | Stack vs Heap][3]
+- [Gruu99 | Stack vs Heap][4]
+- [Wikipedia | Heap Data Structure][5]
 
 [1]: https://www.geeksforgeeks.org/heap-data-structure/
 [2]: https://www.programiz.com/dsa/heap-data-structure
 [3]: https://en.wikipedia.org/wiki/Binary_heap#:~:text=The%20number%20of%20operations%20required,complexity%20of%20O(1).
 [4]: https://www.guru99.com/stack-vs-heap.html
+[5]: https://en.wikipedia.org/wiki/Heap_(data_structure)
