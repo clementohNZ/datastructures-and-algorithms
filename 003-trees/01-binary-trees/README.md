@@ -6,8 +6,8 @@
 - [Sources](#sources)
 
 ## Definitions
-1. In computer science, a binary tree is a tree data structure in which each node has at
-most two children, which are referred to as the left child and the right child 
+1. In computer science, a binary tree is a tree data structure in which each node has
+**at most two children**, which are referred to as the left child and the right child 
 - [Wikipedia][1].
 
 2. A tree whose elements have at most 2 children is called a binary tree. Since each
