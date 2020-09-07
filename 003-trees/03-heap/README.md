@@ -1,6 +1,24 @@
 # Heap (Binary)
 
 ## Table of Contents
+- [Definitions](#definitions)
+  * [Complete Binary Tree](#complete-binary-tree)
+  * [Heap Property](#heap-property)
+- [Representation](#representation)
+- [How it works](#how-it-works)
+  * [Implementation](#implementation)
+  * [Insertion](#insertion)
+  * [Extract](#extract)
+  * [Search](#search)
+  * [Delete](#delete)
+  * [Decrease or Increase Key](#decrease-or-increase-key)
+    + [Decrease Key:](#decrease-key-)
+    + [Increase Key:](#increase-key-)
+- [Pros and Cons](#pros-and-cons)
+  * [When Compared to Stack Data Structure for Memory](#when-compared-to-stack-data-structure-for-memory)
+    + [Benefits](#benefits)
+    + [Downfalls](#downfalls)
+- [Sources](#sources)
 
 ## Definitions
 1. Heap data structure is a complete binary tree that satisfies the **heap property**. It
@@ -30,16 +48,6 @@ only lower than those on the right. Each node and its children are treated indep
 As you can see, `40` on the left tree is greater than `30` on the right tree.
 
 ![Binary Tree Representation](./resources/min-and-max-heap.png)
-
-## Time and Space Complexity
-
-| Algorithm | Average     | Worst Case |
-| --------- | -------     | ---------- |
-| Space     | `O(n)`      | `O(n)`     |
-| Access    | `O(log n)`  | `O(n)`     |
-| Search    | `O(log n)`  | `O(n)`     |
-| Insert    | `O(log n)`  | `O(n)`     |
-| Delete    | `O(log n)`  | `O(n)`     |
 
 ## Representation
 
