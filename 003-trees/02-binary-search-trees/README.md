@@ -21,6 +21,8 @@ way - [Wikipedia][1].
     * The right subtree of a node contains only nodes with keys greater than the node’s key.
     * The left and right subtree each must also be a binary search tree.
 
+![Binary Search Tree](./resources/binary-search-tree.png)
+
 ## Time and Space Complexity
 
 | Algorithm | Average     | Worst Case |
