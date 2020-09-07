@@ -30,8 +30,8 @@ way. - [Wikipedia][1]
 class Node {
   constructor(
     public data: number, 
-    public left: Node, 
-    public right: Node
+    public left: Node, // All items are smaller than items in right node
+    public right: Node, // All items are greater than items in left node
   )
 }
 ```

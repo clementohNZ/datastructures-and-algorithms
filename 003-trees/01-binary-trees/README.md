@@ -20,8 +20,8 @@ right child - [GeeksforGeeks][2].
 class Node {
   constructor(
     public data: number, 
-    public left: Node, 
-    public right: Node
+    public left: Node,
+    public right: Node,
   )
 }
 ```
