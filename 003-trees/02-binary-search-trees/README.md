@@ -1,6 +1,13 @@
 # Binary Search Tree (BST)
 
 ## Table of Contents
+- [Definitions](#definitions)
+- [Time and Space Complexity](#time-and-space-complexity)
+- [Representation](#representation)
+- [Pros and Cons](#pros-and-cons)
+  * [Benefits](#benefits)
+  * [Downfalls](#downfalls)
+- [Sources](#sources)
 
 ## Definitions
 1. In computer science, a binary search tree (BST), also called an **ordered or sorted** binary
