@@ -28,7 +28,11 @@ way. - [Wikipedia][1]
 
 ```typescript
 class Node {
-  constructor(public data: number, public left: Node, public right: Node)
+  constructor(
+    public data: number, 
+    public left: Node, 
+    public right: Node
+  )
 }
 ```
 

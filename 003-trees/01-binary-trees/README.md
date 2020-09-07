@@ -18,7 +18,11 @@ right child - [GeeksforGeeks][2].
 
 ```typescript
 class Node {
-  constructor(public data: number, public left: Node, public right: Node)
+  constructor(
+    public data: number, 
+    public left: Node, 
+    public right: Node
+  )
 }
 ```
 
