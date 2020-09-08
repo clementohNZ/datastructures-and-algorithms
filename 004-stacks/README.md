@@ -1,6 +1,10 @@
 # Stacks
 
 ## Table of Contents
+- [Definition](#definition)
+- [Time and Space Complexity](#time-and-space-complexity)
+- [Operations](#operations)
+- [Sources](#sources)
 
 ## Definition
 A stack is an Abstract Data Type (ADT), commonly used in most programming languages. It
@@ -35,6 +39,21 @@ Underflow state if it is completely empty.
 | Search    | `O(n)`      | `O(n)`     |
 | Insert    | `O(1)`      | `O(1)`     |
 | Delete    | `O(1)`      | `O(1)`     |
+
+## Operations
+Stack operations may involve initializing the stack, using it and then de-initializing
+it. Apart from these basic stuffs, a stack is used for the following two primary
+operations:
+
+* `push()` − Pushing (storing) an element on the stack.
+* `pop()` − Removing (accessing) an element from the stack.
+
+To use a stack efficiently, we need to check the status of stack as well. For the same
+purpose, the following functionality is added to stacks:
+
+* `peek()` − get the top data element of the stack, without removing it.
+* `isFull()` − check if stack is full.
+* `isEmpty()` − check if stack is empty.
 
 ## Sources
 - [GeeksforGeeks | Stack Data Structure][1]
