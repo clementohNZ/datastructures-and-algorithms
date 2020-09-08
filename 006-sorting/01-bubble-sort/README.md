@@ -1,16 +1,17 @@
 # Bubble Sort
 
 ## Table of Contents
+- [Time and Space Complexity](#time-and-space-complexity)
+- [Definition](#definition)
+- [How it works](#how-it-works)
+- [Pros and Cons](#pros-and-cons)
+  * [Benefits](#benefits)
+  * [Downfalls](#downfalls)
+- [Sources](#sources)
 
 ## Time and Space Complexity
 
-| Algorithm | Average     | Worst Case |
-| --------- | -------     | ---------- |
-| Space     | `O(n)`      | `O(n)`     |
-| Access    | `O(n)`      | `O(n)`     |
-| Search    | `O(n)`      | `O(n)`     |
-| Insert    | `O(1)`      | `O(1)`     |
-| Delete    | `O(1)`      | `O(1)`     |
+`Ο(n^2)`
 
 ## Definition
 Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based
@@ -70,7 +71,6 @@ And when there's no swap required, bubble sorts learns that an array is complete
 
 ![Bubble Sort - Step 11](./resources/bubble-sort-11.jpg)
 
-
 ## Pros and Cons
 
 ### Benefits
@@ -80,6 +80,6 @@ And when there's no swap required, bubble sorts learns that an array is complete
 - Not good for large datasets. Time complexity of `O(n^2)`.
 
 ## Sources
-- [Tutorials Point | Data Structure and Algorithms - Queue][1]
+- [Tutorials Point | Data Structure - Bubble Sort Algorithm][1]
 
-[1]: https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm
+[1]: https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_algorithm.htm
