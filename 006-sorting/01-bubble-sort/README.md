@@ -11,7 +11,10 @@
 
 ## Time and Space Complexity
 
-`Ο(n^2)`
+| Algorithm | Best Case | Average  | Worst Case |
+| --------- | --------- | -------- | ---------- |
+| Space     | `O(1)`    | `O(1)`   | `O(1)`     |
+| Sorting   | `O(n)`    | `O(n^2)` | `O(n^2)`   |
 
 ## Definition
 Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based
