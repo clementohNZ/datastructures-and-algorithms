@@ -293,6 +293,8 @@ like a charm. It's frequently used in clusters where dataset can span over hundr
 ## Sources
 - [Programiz | Heap Sort][1]
 - [Big O Cheat Sheet][2]
+- [Quora | What are the benefits of heap sort and its disadvantages compared to other sorting algorithms?][3]
 
 [1]: https://www.programiz.com/dsa/heap-sort
 [2]: https://www.bigocheatsheet.com/
+[3]: https://www.quora.com/What-are-the-benefits-of-heap-sort-and-its-disadvantages-compared-to-other-sorting-algorithms
