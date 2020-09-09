@@ -97,4 +97,4 @@ Now we shall see some programming aspects of insertion sort.
 ## Sources
 - [Tutorials Point | Data Structure - Bubble Sort Algorithm][1]
 
-[1]: https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_algorithm.htm
+[1]: https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm
