@@ -95,8 +95,6 @@ class LinkedList {
 
     this.size -= 1;
 
-    const deletedHead = this.head;
-
     if (this.head.next) {
       this.head = this.head.next;
     } else {
