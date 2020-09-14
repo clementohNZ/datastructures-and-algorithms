@@ -19,7 +19,7 @@ class LinkedList {
 
     this.head = newNode;
     if (!this.tail) this.tail = newNode;
-    
+
     return this;
   }
 
@@ -87,11 +87,7 @@ class LinkedList {
       this.tail = currentNode;
     }
 
-    if (deletedNode == null) {
-      return false;
-    } else {
-      return true;
-    }
+    return deletedNode != null;
   }
 
   deleteHead() {
@@ -118,8 +114,8 @@ class LinkedList {
       if (this.head === null) {
         return false;
       } else {
-        this.head === null;
-        this.tail === null;
+        this.head = null;
+        this.tail = null;
         this.size -= 1;
         return true;
       }
@@ -146,7 +142,7 @@ class LinkedList {
     let currentValue = isNode ? value.value : value;
 
     let currentNode = this.head;
-    
+
     while (currentNode) {
       if (currentValue !== undefined && currentValue === currentNode.value) {
         return true;
@@ -163,7 +159,7 @@ class LinkedList {
     }
 
     if (!this.head) return undefined;
-
+    let currentNode = this.head;
     while (currentNode) {
       if (callback && callback(currentNode.value)) {
         return currentNode;
@@ -173,7 +169,7 @@ class LinkedList {
 
     return undefined;
   }
-  
+
 }
 
 module.exports = LinkedList
