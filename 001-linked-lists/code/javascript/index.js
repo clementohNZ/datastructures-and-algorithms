@@ -1,5 +1,5 @@
-const LinkedList = require('./linked-list');
-const LinkedListNode = require('./linked-list-node')
+const LinkedList = require('./LinkedList');
+const LinkedListNode = require('./LinkedListNode')
 
 console.log(new LinkedListNode(3))
 console.log(new LinkedListNode(3, 10))
