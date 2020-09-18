@@ -1,8 +1,11 @@
+/**
+ * Adapted from https://gist.github.com/alexhawkins/f6329420f40e5cafa0a4
+ */
 class HashTable {
     constructor() {
         this._storage = [];
         this._count = 0;
-        this._limit = 0;
+        this._limit = 100;
     }
 
     /**
@@ -21,11 +24,12 @@ class HashTable {
         //   [ [k,v], [k,v] ], <--- bucket 2
         //   [ [k,v] ] <--- bucket 3
         // ]
-        let bucket = this._storage[index]
+        console.log('index from hash function', index)
+        let bucket = this._storage[index];
         // does a bucket exist or do we get undefined when trying to retrieve said index?
         if (!bucket) {
             // create the bucket
-            bucket = []
+            bucket = [];
             // insert the bucket into our hashTable
             this._storage[index] = bucket;
         }
@@ -50,7 +54,7 @@ class HashTable {
             // bucket because their keys all equate to the same numeric index when
             // passing through our hash function.
             bucket.push([key, value]);
-            this._count++
+            this._count++;
             // now that we've added our new key/val pair to our storage
             // let's check to see if we need to resize our storage
             if (this._count > this._limit * 0.75) {
@@ -115,6 +119,12 @@ class HashTable {
         return hash;
     };
 
+    /**
+     * Remove an item from the hash table.
+     *
+     * @param key
+     * @returns {null|*}
+     */
     remove(key) {
         const index = this.hashFunc(key, this._limit)
         const bucket = this._storage[index]
@@ -123,7 +133,7 @@ class HashTable {
         }
         // iterate over the bucket
         for (let i = 0; i < bucket.length; i++) {
-            const tuple = bucket[i]
+            const tuple = bucket[i];
             // check to see if key is inside bucket
             if (tuple[0] === key) {
                 // if it is, get rid of this tuple
@@ -137,6 +147,12 @@ class HashTable {
         }
     };
 
+    /**
+     * Get an item from the hash table.
+     *
+     * @param key
+     * @returns {null|*}
+     */
     retrieve(key) {
         const index = this.hashFunc(key, this._limit)
         const bucket = this._storage[index]
@@ -157,3 +173,15 @@ class HashTable {
 }
 
 const ht = new HashTable();
+ht.insert('one', 1)
+ht.insert('two', 2)
+ht.insert('two', 3)
+ht.insert('four', 'hello my name is...')
+console.log(ht._storage)
+console.log(ht.retrieve('one'))
+ht.remove('two')
+// make sure the array resizes
+for (let i = 10; i > 0; i--) {
+    ht.insert(i, i)
+}
+console.log(ht._storage)
