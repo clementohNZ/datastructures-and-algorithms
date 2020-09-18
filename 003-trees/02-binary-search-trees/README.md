@@ -36,11 +36,11 @@ way - [Wikipedia][1].
 ## Representation
 
 ```typescript
-class Node {
+class MinHeap {
   constructor(
     public data: number, 
-    public left: Node, // All items are smaller than items in right node
-    public right: Node, // All items are greater than items in left node
+    public left: MinHeap, // All items are smaller than items in right node
+    public right: MinHeap, // All items are greater than items in left node
   )
 }
 ```

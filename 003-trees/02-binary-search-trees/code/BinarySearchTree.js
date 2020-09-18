@@ -62,7 +62,7 @@ class BinarySearchTree {
   }
 
   /**
-   * Remove Node with a given data.
+   * Remove MinHeap with a given data.
    *
    * @param data
    */

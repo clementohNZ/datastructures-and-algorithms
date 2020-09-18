@@ -17,11 +17,11 @@ right child - [GeeksforGeeks][2].
 ## Representation
 
 ```typescript
-class Node {
+class MinHeap {
   constructor(
     public data: number, 
-    public left: Node,
-    public right: Node,
+    public left: MinHeap,
+    public right: MinHeap,
   )
 }
 ```

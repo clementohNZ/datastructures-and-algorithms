@@ -169,7 +169,7 @@ by the order in which the nodes are visited:
 
 #### Depth-First Search (DFS) Algorithm
 It starts with the root node and first visits all nodes of one branch as deep as
-possible of the chosen Node and before backtracking, it visits all other branches
+possible of the chosen MinHeap and before backtracking, it visits all other branches
 in a similar fashion. There are three sub-types under this, which we will cover in
 this article.
 
@@ -179,7 +179,7 @@ moving to the next depth in the tree. We will cover one algorithm of BFS type in
 the upcoming section.
 
 #### Practical Guide
-Below is the blueprint of our Node class which will act as the atomic member of
+Below is the blueprint of our MinHeap class which will act as the atomic member of
 the Tree Data Structure. We will call it TreeNode, which is holding data as an
 integer value, left and right children of the same type(TreeNode). You can use
 any other data structure to keep as data under the TreeNode.
@@ -208,7 +208,7 @@ public class TreeNode {
 Inorder Traversal is the one the most used variant of DFS(Depth First Search)
 Traversal of the tree.
 
-As DFS suggests, we will first focus on the depth of the chosen Node and then go
+As DFS suggests, we will first focus on the depth of the chosen MinHeap and then go
 to the breadth at that level. Therefore, we will start from the root node of the
 tree and go deeper-and-deeper into the left subtree with recursive manner.
 
@@ -219,7 +219,7 @@ Same steps should be followed in a recursive manner to complete the inorder
 traversal. Order of those steps will be like (in recursive function)...
 
 1. Go to left-subtree
-2. Visit Node
+2. Visit MinHeap
 3. Go to right-subtree
 
 ```java
@@ -248,7 +248,7 @@ right sub-tree and visit in a similar fashion.
 
 Order of those steps will be like...
 
-1. Visit Node
+1. Visit MinHeap
 2. Go to left-subtree
 3. Go to right-subtree
 
@@ -272,7 +272,7 @@ So, the sequence of the steps will be…
 
 1. Go to left-subtree
 2. Go to right-subtree
-3. Visit Node
+3. Visit MinHeap
 
 ```java
 public void postorderTraversal(TreeNode root) {
@@ -301,7 +301,7 @@ all the nodes of that level.
 
 Implementation is slightly challenging here than the above three traversals.
 We will use a Queue(FIFO) data structure to implement Level order traversal,
-where after visiting a Node, we simply put its left and right children to
+where after visiting a MinHeap, we simply put its left and right children to
 queue sequentially.
 
 Here, **the order of adding children in the queue is important** as we have to
