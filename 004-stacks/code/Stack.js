@@ -5,6 +5,7 @@ class Stack {
   constructor() {
     this.data = []
     this.top = 0
+    this.size = 10
   }
 
   /**
@@ -12,11 +13,17 @@ class Stack {
    * top position of data and need to increment the top variable so
    * that the top will point to the next empty place.
    *
+   * We also need to check if the stack is full or not so it
+   * avoids overflow.
+   *
    * @param element
    */
   push(element) {
-    this.data[this.top] = element
-    this.top = this.top + 1
+    if (this.size <= 10) {
+      this.data[this.top] = element
+      this.top = this.top + 1
+      this.size = this.size + 1
+    }
   }
 
   /**
@@ -62,6 +69,7 @@ class Stack {
    */
   pop() {
     this.top = this.top - 1
+    this.size = this.size - 1
     return this.data.pop() // removes the last element
   }
 
