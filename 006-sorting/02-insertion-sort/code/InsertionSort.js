@@ -1,3 +1,6 @@
+/**
+ * Adapted from https://medium.com/dailyjs/insertion-sort-in-javascript-9c077844717a
+ */
 class InsertionSort {
   /**
    * The code for insertion sort has two indices, i and j. i tracks
@@ -19,13 +22,15 @@ class InsertionSort {
    */
   sort(array) {
     for (let i = 1; i < array.length; i++) {
-      let j = i - 1
-      let tmp = array[i]
-      while (j >= 0 && array[j] > tmp) {
-        array[j + 1] = array[j]
-        j--
+      let previousItemIndex = i - 1
+      const currentItem = array[i]
+      const previousItem = array[previousItemIndex]
+      const currentItemIndex = previousItemIndex + 1
+      while (previousItemIndex >= 0 && previousItem > currentItem) {
+        array[currentItemIndex] = previousItem
+        previousItemIndex--
       }
-      array[j + 1] = tmp
+      array[currentItemIndex] = currentItem
     }
     return array
   }
