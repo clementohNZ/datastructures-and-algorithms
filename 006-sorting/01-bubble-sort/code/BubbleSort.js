@@ -23,7 +23,7 @@ class BubbleSort {
   }
 }
 
-const bubbleSort = new BubbleSort()
+const sortingAlgorithm = new BubbleSort()
 const arrayToSort = [5, 3, 8, 2, 1, 4]
-const result = bubbleSort.sort(arrayToSort)
+const result = sortingAlgorithm.sort(arrayToSort)
 console.log(result)
