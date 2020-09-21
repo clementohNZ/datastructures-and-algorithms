@@ -1,4 +1,12 @@
 class MergeSort {
+  /**
+   * This algorithm could be extended to take in objects that implement
+   * something like java's Comparable interface so it can sort more
+   * complex objects.
+   *
+   * @param {number[]} array - array to be sorted.
+   * @returns {number[]} - sorted array.
+   */
   sort(array) {
     // base case
     if (array.length < 2) return array;
